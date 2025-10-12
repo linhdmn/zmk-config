@@ -9,14 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        label = "BATTERY";
-        io-channels = <&adc 0>;
-        output-ohms = <10000>;
-        full-ohms = <(10000 + 4700)>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
